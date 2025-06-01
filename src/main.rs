@@ -341,7 +341,7 @@ struct UnstableOptions {
     witness_hints: bool,
 
     /// Enable generating and testing witness programs, full examples of potentially-broken downstream code.
-    #[arg(long, id = "OUTPUT_PATH", hide = true)]
+    #[arg(long, id = "OUTPUT_DIR", hide = true)]
     witnesses: Option<PathBuf>,
 }
 
@@ -374,7 +374,7 @@ impl UnstableOptions {
         }
 
         if witnesses.is_some() {
-            list.push("--witnesses <OUTPUT_PATH>".into())
+            list.push("--witnesses <OUTPUT_DIR>".into())
         }
 
         list
