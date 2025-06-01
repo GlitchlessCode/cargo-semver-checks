@@ -373,7 +373,7 @@ impl UnstableOptions {
             list.push("--witness-hints".into());
         }
 
-        if let Some(output_path) = witnesses {
+        if witnesses.is_some() {
             list.push("--witnesses <OUTPUT_PATH>".into())
         }
 
