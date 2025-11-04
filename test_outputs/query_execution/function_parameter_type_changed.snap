@@ -374,9 +374,9 @@ expression: "&query_execution_results"
   ],
   "./test_crates/function_parameter_type_changed/": [
     {
-      "current_signature": String("fn function_with_parameter_changed(_: i64)"),
+      "current_signature": String("fn function_with_parameter_changed(_: i64, _: i32)"),
       "name": String("function_with_parameter_changed"),
-      "old_signature": String("fn function_with_parameter_changed(_: i32)"),
+      "old_signature": String("fn function_with_parameter_changed(_: i32, _: i32)"),
       "path": List([
         String("function_parameter_type_changed"),
         String("function_with_parameter_changed"),
